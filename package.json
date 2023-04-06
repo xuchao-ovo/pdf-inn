@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "lodash": "^4.17.21",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^3.5.141",
+    "pdfreader": "^3.0.0",
+    "string": "^3.3.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/pdf-parse": "^1.1.1",
+    "ts-node": "^10.9.1"
+  }
+}
