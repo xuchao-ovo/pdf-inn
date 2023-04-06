@@ -1,5 +1,4 @@
 import XLSX from "xlsx";
-import crypto from "crypto";
 
 // 读取 Excel 文件
 const workbook = XLSX.readFile("INN-tib-Lists.xlsx");
@@ -55,5 +54,18 @@ function generateUniqueStrings(
   return uniqueStrings;
 }
 
-const uniqueStrings = generateUniqueStrings(4, 10, data);
+const uniqueStrings = generateUniqueStrings(4, 100, data);
+
+// // 创建工作簿
+// const workbook2 = XLSX.utils.book_new();
+
+// // 创建工作表
+// const worksheet2 = XLSX.utils.aoa_to_sheet(uniqueStrings.map(str => [str]));
+
+// // 将工作表添加到工作簿
+// XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
+
+// // 将工作簿保存到文件
+// XLSX.writeFile(workbook, 'output.xlsx');
+
 console.log(uniqueStrings);
