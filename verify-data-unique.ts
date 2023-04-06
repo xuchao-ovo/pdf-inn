@@ -7,7 +7,7 @@ const worksheet = workbook.Sheets[workbook.SheetNames[0]];
 const  data:any = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false });
 
 // 单词
-const word = 'Selco';
+const word = 'ldhwdt';
 
 // 比较单词和 Excel 表格中的数据
 for (let i = 1; i < data.length; i++) {
